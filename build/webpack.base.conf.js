@@ -18,7 +18,8 @@ module.exports = {
     fallback: [path.join(__dirname, '../node_modules')], // require模块找不到的时候会指向node_modules
     alias: { // 别名 根据别名缩短路径字符串长度
       'src': path.resolve(__dirname, '../src'),
-      'assets': path.resolve(__dirname, '../src/assets'),
+      'common': path.resolve(__dirname, '../src/common'),
+      // 'assets': path.resolve(__dirname, '../src/assets'), 没有这个目录了
       'components': path.resolve(__dirname, '../src/components')
     }
   },
